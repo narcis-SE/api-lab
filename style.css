@@ -1,0 +1,33 @@
+body{
+    background: lightblue;
+    text-align: center;
+}
+
+.image{
+    margin-top: 20px;
+    border: 5px solid blue;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    width: 250px;
+    height: 250px;
+}
+
+.div{
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+
+.link{
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.display{
+    border: 5px solid black;
+}
+
+
