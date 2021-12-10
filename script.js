@@ -3,11 +3,10 @@ var anotherDisplay = document.getElementById("anotherDisplay");
 
 
 
-
 function onClick(){
     var subreddit = document.getElementById("subreddit");
     let value = subreddit.value;
-    console.log(value);
+    
     const promise = fetch("https://www.reddit.com/r/"+ value + "/.json")
     .then(response => response.json());
 
@@ -22,7 +21,6 @@ function onClick(){
         const link = document.createElement("a");
         link.classList.add("link");
 
-        console.log(data.data.children[i])
 
         div.innerHTML = data.data.children[i].data.title;
         img.src = data.data.children[i].data.thumbnail;
@@ -34,5 +32,6 @@ function onClick(){
         displayContainer.appendChild(img);
         displayContainer.appendChild(link);
     }
-})
+
+ })
 }
